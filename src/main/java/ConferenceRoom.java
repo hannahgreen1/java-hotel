@@ -1,14 +1,26 @@
 public class ConferenceRoom extends Room {
 
     private String roomName;
+    private int roomNumber;
+    private Double roomRate;
 
-    public ConferenceRoom(){
-        super(1, 300.00, 150, "Conference");
+    public ConferenceRoom(String roomName, int roomNumber, Double roomRate){
+        super(200);
         this.roomName = roomName;
-
+        this.roomNumber = roomNumber;
+        this.roomRate = roomRate;
     }
 
+
     public String getRoomName(){
-        return "Skye";
+        return roomName;
+    }
+
+    public int getroomNumber(){
+        return roomNumber;
+    }
+
+    public Double getRate() {
+        return roomRate;
     }
 }

@@ -2,14 +2,14 @@ public enum BedroomType {
     SINGLE(50),
     DOUBLE(80);
 
-    private final int rate;
+    private final int roomRate;
 
-    BedroomType(int rate){
-        this.rate = rate;
+    BedroomType(int roomRate){
+        this.roomRate = roomRate;
     }
 
-    public int getRate() {
-        return rate;
+    public int getRoomRate() {
+        return roomRate;
     }
     }
 
